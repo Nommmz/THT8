@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anom Wajawening - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="scroll-progress"></div>
+    <button id="theme-toggle">Toggle Theme</button>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#hobby">Hobby</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="about" class="section fade-in">
+            <h1>About Me</h1>
+            <div class="about-content">
+                <img src="foto.jpg" alt="Profile Picture" class="profile-pic">
+                <div class="about-text">
+                    <h2>Anom Wajawening</h2>
+
+                    <div class="about-text">
+                        <p>Hello! I'm a student in universitas pertamina and learning web developer, I have experience in HTML, CSS, JavaScript, and various modern web technologies.</p>
+                        <p>Currently based in Jakarta, Indonesia, I love learning code.</p>                    
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="hobby" class="section fade-in">
+            <h1>My Hobbies</h1>
+            <div class="hobby-grid">
+                <div class="hobby-card">
+                    <img src="code.jpeg" alt="Coding">
+                    <h2>Coding</h2>
+                    <p>Building website with code</p>
+                </div>
+                <div class="hobby-card">
+                    <img src="kamera.jpeg" alt="Photography">
+                    <h2>Photography</h2>
+                    <p>Capturing memorable moment</p>
+                </div>
+                <div class="hobby-card">
+                    <img src="buku.jpeg" alt="Reading">
+                    <h2>Reading</h2>
+                    <p>Open books, open new world</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section fade-in">
+            <h1>Contact Me</h1>
+            <div class="social-links">
+                <a href="https://instagram.com/a_wajawening" class="social-card instagram">
+                    <img src="ig.jpeg" alt="Instagram Icon" class="social-icon">
+                    <div class="social-info">
+                        <h2>Instagram</h2>
+                        <p>@a_wajawening</p>
+                    </div>
+                </a>
+                <a href="https://linkedin.com/in/anom-wajawening" class="social-card linkedin">
+                    <img src="linkedin.png" alt="LinkedIn Icon" class="social-icon">
+                    <div class="social-info">
+                        <h2>LinkedIn</h2>
+                        <p>anom wajawening</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <section id="contact" class="section fade-in">
+        <h1>Form untuk bisa Menghubungi Anda</h1>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+    
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required pattern="\d{10,15}"><br>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea><br>
+    
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
